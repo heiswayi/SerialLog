@@ -102,7 +102,7 @@ namespace SerialLog
                 string file = AppDomain.CurrentDomain.BaseDirectory + "\\datalogs\\" + _filename;
                 try
                 {
-                    File.WriteAllText(file, "# This file is auto-generated on " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff tt") + ".");
+                    File.WriteAllText(file, "# This file is auto-generated on " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff tt") + "." + Environment.NewLine);
                 }
                 catch (Exception ex)
                 {
